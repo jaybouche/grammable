@@ -69,7 +69,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.3.1'
 source 'https://rails-assets.org' do
 gem 'rails-assets-tether', '>= 1.3.3'
-gem 'factory_bot_rails'
 end
 gem 'simple_form'
 gem 'font-awesome-rails'
