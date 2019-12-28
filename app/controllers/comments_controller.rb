@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-before_action :authenticate_user!, only: [:create]
+  before_action :authenticate_user!, only: [:create]
 
   def create
     @gram = Gram.find_by_id(params[:gram_id])
@@ -11,10 +11,12 @@ before_action :authenticate_user!, only: [:create]
 
   private
 
- 
+
+
+
+
 
   def comment_params
     params.require(:comment).permit(:message)
   end
-
 end
